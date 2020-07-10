@@ -1,8 +1,8 @@
 from falcon_autocrud.resource import CollectionResource, SingleResource
 from models import *
-# /retailers
+# /moonproduct
 class RetailerCollectionResource(CollectionResource):
  model=moonproduct
-# /retailers/{id}
+# /moonproduct/{id}
 class RetailerResource(SingleResource):
  model=moonproduct
