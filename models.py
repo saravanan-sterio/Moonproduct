@@ -3,7 +3,7 @@ from sqlalchemy import create_engine, Column, Integer, String
 Base=declarative_base()
 DB_URI = 'postgresql+psycopg2://postgres:steriowolf@localhost/moonproduct'
 class moonproduct(Base):
- __tablename__='retailer'
+ __tablename__='sample'
  id = Column(Integer,primary_key=True)
  name = Column(String(100))
  Contact_number = Column(Integer)
@@ -13,3 +13,4 @@ if __name__=="__main__":
  engine = create_engine(DB_URI)
  Base.metadata.drop_all(engine)
  Base.metadata.create_all(engine)
+
